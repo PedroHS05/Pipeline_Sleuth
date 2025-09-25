@@ -3,6 +3,8 @@
   "routes": [
     { "handle": "filesystem" },
     { "src": "/", "dest": "/index.html" },
-    { "src": "/(.*)", "dest": "/pages/$1" }
-  ]
+    { "src": "/assets/(.*)", "dest": "/assets/$1" },
+    { "src": "/pages/(.*)", "dest": "/pages/$1" }
+  ],
+  "cleanUrls": true
 }
