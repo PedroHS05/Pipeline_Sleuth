@@ -1,0 +1,15 @@
+name: "Configuração Personalizada do CodeQL"
+
+queries:
+  - uses: security-and-quality
+
+paths:
+  - assets
+  - pages
+  - '!node_modules'
+  - '!vendor'
+
+paths-ignore:
+  - '**/*.test.js'
+  - '**/*.spec.js'
+  - '**/dist/**'
